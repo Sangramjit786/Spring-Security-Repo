@@ -17,10 +17,10 @@ public class ProjectSecurityConfig {
         http.authorizeHttpRequests((requests) -> requests
                 .requestMatchers("/myAccount", "/myBalance", "/myLoans", "/myCards").authenticated()
                 .requestMatchers("/notices", "/contact", "/error").permitAll());
-//        http.formLogin(withDefaults());
-        http.formLogin(flc -> flc.disable());
-//        http.httpBasic(withDefaults());
-        http.httpBasic(hbc -> hbc.disable());
+        http.formLogin(withDefaults());
+//        http.formLogin(flc -> flc.disable());
+        http.httpBasic(withDefaults());
+//        http.httpBasic(hbc -> hbc.disable());
         return http.build();
     }
 }
