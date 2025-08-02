@@ -18,3 +18,7 @@ CREATE TABLE `customer` (
 
 INSERT  INTO `customer` (`email`, `pwd`, `role`) VALUES ('happy@example.com', '{noop}Sangramjit@12345', 'read');
 INSERT  INTO `customer` (`email`, `pwd`, `role`) VALUES ('admin@example.com', '{bcrypt}$2a$12$yfmEvViJAY7aAvfhxGRQiuOy3jTdjgUbJiEvZbIx.oMQzWyqJplBm', 'admin');
+
+UPDATE `customer`
+SET pwd = '{bcrypt}$2a$12$RgJJlS92eongDdetugc6h.TA127qNIsDOlIBhD2EDkAJXEGs2uirq'
+WHERE id = 2;
