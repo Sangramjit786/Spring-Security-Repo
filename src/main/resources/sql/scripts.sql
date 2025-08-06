@@ -21,7 +21,7 @@ INSERT  INTO `customer` (`email`, `pwd`, `role`) VALUES ('admin@example.com', '{
 
 UPDATE `customer`
 SET pwd = '{bcrypt}$2a$12$RgJJlS92eongDdetugc6h.TA127qNIsDOlIBhD2EDkAJXEGs2uirq'
-WHERE id = 2;
+WHERE customer_id = 2;
 
 drop table `authorities`;
 drop table `users`;
