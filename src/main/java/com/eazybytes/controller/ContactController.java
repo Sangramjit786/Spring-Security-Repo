@@ -3,12 +3,13 @@ package com.eazybytes.controller;
 import com.eazybytes.model.Contact;
 import com.eazybytes.repository.ContactRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.security.access.prepost.PreFilter;
+import org.springframework.security.access.prepost.PostFilter;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -19,7 +20,8 @@ public class ContactController {
     private final ContactRepository contactRepository;
 
     @PostMapping("/contact")
-    /*public List<Contact> saveContactInquiryDetails(@RequestBody List<Contact> contacts) {
+    @PostFilter("filterObject.contactName != 'Test'")
+    public List<Contact> saveContactInquiryDetails(@RequestBody List<Contact> contacts) {
         List<Contact> returnContacts = new ArrayList<>();
         if(!contacts.isEmpty()) {
             Contact contact = contacts.getFirst();
@@ -29,9 +31,9 @@ public class ContactController {
             returnContacts.add(savedContact);
         }
         return returnContacts;
-    }*/
-    @PreFilter("filterObject.contactName != 'Test'")
-    public Contact saveContactInquiryDetails(@RequestBody List<Contact> contacts) {
+    }
+//    @PreFilter("filterObject.contactName != 'Test'")
+    /*public Contact saveContactInquiryDetails(@RequestBody List<Contact> contacts) {
         if(!contacts.isEmpty()) {
             Contact contact = contacts.getFirst();
             contact.setContactId(getServiceReqNumber());
@@ -41,7 +43,7 @@ public class ContactController {
             return null;
         }
 
-    }
+    }*/
 
     public String getServiceReqNumber() {
         Random random = new Random();
