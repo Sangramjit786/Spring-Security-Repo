@@ -7,7 +7,8 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 @SpringBootApplication
 /*@EnableJpaRepositories("com.eazybytes.repository")
 @EntityScan("com.eazybytes.model")*/
-@EnableWebSecurity(debug = true)
+//@EnableWebSecurity(debug = true)
+@EnableWebSecurity
 public class EazyBankBackendApplication {
 
 	public static void main(String[] args) {
