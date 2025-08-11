@@ -1,42 +1,24 @@
 package com.eazybytes.controller;
 
-import com.eazybytes.constants.ApplicationConstants;
 import com.eazybytes.model.Customer;
-import com.eazybytes.model.LoginRequestDTO;
-import com.eazybytes.model.LoginResponseDTO;
 import com.eazybytes.repository.CustomerRepository;
-import io.jsonwebtoken.Jwts;
-import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
-import org.springframework.core.env.Environment;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.crypto.SecretKey;
-import java.nio.charset.StandardCharsets;
-import java.sql.Date;
 import java.util.Optional;
-import java.util.stream.Collectors;
 
 @RestController
 @RequiredArgsConstructor
 public class UserController {
 
     private final CustomerRepository customerRepository;
-    private final PasswordEncoder passwordEncoder;
+    /*private final PasswordEncoder passwordEncoder;
     private final AuthenticationManager authenticationManager;
-    private final Environment env;
+    private final Environment env;*/
 
-    @PostMapping("/register")
+    /*@PostMapping("/register")
     public ResponseEntity<String> registerUser(@RequestBody Customer customer) {
         try {
             String hashPwd = passwordEncoder.encode(customer.getPwd());
@@ -55,7 +37,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).
                     body("An exception occurred: " + ex.getMessage());
         }
-    }
+    }*/
 
     @RequestMapping("/user")
     public Customer getUserDetailsAfterLogin(Authentication authentication) {
@@ -64,7 +46,7 @@ public class UserController {
     }
 
 
-    @PostMapping("/apiLogin")
+    /*@PostMapping("/apiLogin")
     public ResponseEntity<LoginResponseDTO> apiLogin (@RequestBody LoginRequestDTO loginRequest) {
         String jwt = "";
         Authentication authentication = UsernamePasswordAuthenticationToken.unauthenticated(loginRequest.username(),
@@ -86,5 +68,5 @@ public class UserController {
         }
         return ResponseEntity.status(HttpStatus.OK).header(ApplicationConstants.JWT_HEADER,jwt)
                 .body(new LoginResponseDTO(HttpStatus.OK.getReasonPhrase(), jwt));
-    }
+    }*/
 }
