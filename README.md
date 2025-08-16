@@ -159,7 +159,8 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 <img width="1372" height="447" alt="image" src="https://github.com/user-attachments/assets/70903546-049c-47a0-a611-4715287b8911" />
 
 ### JWT Tokens
-<img width="1392" height="783" alt="image" src="https://github.com/user-attachments/assets/1b0c00fe-44b3-4d7e-9301-6ac00c7aed9e" />
+<img width="1538" height="786" alt="image" src="https://github.com/user-attachments/assets/166eafe2-fb09-42be-8fd4-ba573c3ffbae" />
+
 
 ### 17. Method Level Security
 94. [Introduction](#94 introduction to method level security in spring security)
@@ -178,24 +179,28 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 105. [Authorization Code Demo](#105 demo of authorization code grant type flow in oauth2)
 
 ### OAUTH2 Flow(Authorizatio Code)
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c19b3774-761c-4594-84b3-5e9eeb9213b4" />
+<img width="1537" height="757" alt="image" src="https://github.com/user-attachments/assets/5bbcf56b-cd96-47e4-a43c-6c31bd02ff5e" />
+
 
 106. [Implicit Flow](#106 deep dive  demo of implicit grant flow in oauth2)
 107. [PKCE Flow](#107 deep dive  demo of authorization code grant type with pkce)
 
 ### OAUTH2 Flow(PKCE)
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/57652446-0600-40ac-86dc-372edb791e33" />
+<img width="1536" height="768" alt="image" src="https://github.com/user-attachments/assets/810a3d33-60b6-4bd7-8e43-964eaa46df58" />
+
 
 108. [Password Grant](#108 deep dive of password grant type flow in oauth2)
 109. [Client Credentials](#109 deep dive of client credentials grant type flow in oauth2)
 
 ### OAUTH2 Flow(Client Credentials Grant Type)
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bff2f015-50e0-4934-a11f-744989d93ca5" />
+<img width="1540" height="762" alt="image" src="https://github.com/user-attachments/assets/cc5831b6-d436-4c8e-ab7d-f0576eaf7ac8" />
+
 
 110. [Refresh Token Flow](#110 deep dive of refresh token grant type flow in oauth2)
 
 ### OAUTH2 Flow(Refresh Token Grant Type)
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6ac98ca3-e7d2-4793-87d4-0d345fba81dd" />
+<img width="1261" height="750" alt="image" src="https://github.com/user-attachments/assets/cc59a49f-606a-4ae3-babc-bd95b05e65ea" />
+
 
 111. [Token Validation](#111 how resource server validates the tokens issued by auth server)
 112. [OpenID Connect](#112 introduction to openid connect)
