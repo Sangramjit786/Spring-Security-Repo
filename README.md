@@ -218,7 +218,7 @@ spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8180/real
 
 The project follows a standard Spring Boot project structure:
 src/main/java/com/eazybytes/
-├── config/           # Security and application configurations
+├── config/           # Security and application configurations\n
 ├── constants/        # Application constants
 ├── controller/       # REST controllers
 ├── events/           # Application events
@@ -236,50 +236,52 @@ mvn spring-boot:run
 ##Run tests using:
 mvn test
 
-🔐 Security Implementation
+🔐 Security Implementation**
 
-JWT Authentication
+JWT Authentication:
   JWT token generation and validation
   Custom JWT filter
   Token expiration and refresh mechanism
   
-OAuth2 with Keycloak
+OAuth2 with Keycloak:
   OAuth2 Resource Server configuration
   Role-based access control
   Custom token mappers
   
-Method Security
+Method Security:
   @PreAuthorize and @PostAuthorize annotations
   Custom security expressions
   Method-level permission checks
   
 
-🌐 API Endpoints
-Secured Endpoints
+🌐 API Endpoints**
+
+Secured Endpoints:
 GET /myAccount - Get account details (requires USER role)
 GET /myBalance - Get balance (requires USER role)
 GET /myLoans - Get loan details (requires USER role)
 GET /myCards - Get card details (requires ADMIN role)
 
 
-🛡️ Security Best Practices
-Password Security
+🛡️ Security Best Practices: 
+
+Password Security**
   BCrypt password hashing
   Password strength validation
   Secure password storage
   
-Session Management
+Session Management**
   Secure session configuration
   Session fixation protection
   Concurrent session control
   
-HTTPS
-  =>Enforce HTTPS
+HTTPS**
+  Enforce HTTPS
   Secure cookie configuration
   HSTS header
   
   
-🙏 Acknowledgments
+🙏 Acknowledgments**
   Spring Security Team
   Keycloak Community
   All open-source contributors
