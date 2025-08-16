@@ -20,7 +20,8 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 
 
 ### Spring Security Internal Flow For Default Behaviour
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36649af7-d85a-4eee-ae44-17ce30b94b66" />
+<img width="1262" height="627" alt="image" src="https://github.com/user-attachments/assets/2175df25-00e2-4c81-814c-94e4aa51bb07" />
+
 
 ### 3. Authentication & Authorization
 8. [Multiple Requests Without Credentials](#8 understanding on how multiple requests work with out credentials)
@@ -63,7 +64,8 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 37. [Bcrypt Demo](#37 demo of registration and login with bcrypt password encoder)
 
 ### Encoding vs Encryption vs Hashing
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/93b6f94c-d91e-491b-a0b7-8c19ca1708f0" />
+<img width="1266" height="645" alt="image" src="https://github.com/user-attachments/assets/630fd69f-51c3-411e-867a-346a2cd03dda" />
+
 
 ### 8. Custom Authentication Provider
 38. [Custom AuthenticationProvider](#38 why should we consider creating our own authenticationprovider)
@@ -114,7 +116,8 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 71. [Authentication vs Authorization](#71 authentication vs authorization)
 
 ### Authentication vs Authorization
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9bf63f0e-def0-4702-bf10-2d8834a2d4dc" />
+<img width="1265" height="597" alt="image" src="https://github.com/user-attachments/assets/368088f5-ae4e-4510-a921-88d64aa86559" />
+
 
 72. [Storing Authorities](#72 how authorities stored inside spring security)
 73. [Authorities Table](#73 creating new table authorities to store multiple roles or authorities)
