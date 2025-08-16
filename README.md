@@ -21,7 +21,6 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 ### Spring Security Internal Flow For Default Behaviour
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36649af7-d85a-4eee-ae44-17ce30b94b66" />
 
-
 ### 3. Authentication & Authorization
 8. [Multiple Requests Without Credentials](#8 understanding on how multiple requests work with out credentials)
 9. [EazyBank UI Overview](#9 understanding about ui part of the eazybank application)
@@ -61,6 +60,9 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 35. [PasswordEncoders in Spring](#35 introduction to passwordencoders in spring security)
 36. [PasswordEncoder Implementations](#36 deep dive of passwordencoder implementation classes)
 37. [Bcrypt Demo](#37 demo of registration and login with bcrypt password encoder)
+
+### Encoding vs Encryption vs Hashing
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/93b6f94c-d91e-491b-a0b7-8c19ca1708f0" />
 
 ### 8. Custom Authentication Provider
 38. [Custom AuthenticationProvider](#38 why should we consider creating our own authenticationprovider)
@@ -109,6 +111,10 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 
 ### 14. Authorization
 71. [Authentication vs Authorization](#71 authentication vs authorization)
+
+### Authentication vs Authorization
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9bf63f0e-def0-4702-bf10-2d8834a2d4dc" />
+
 72. [Storing Authorities](#72 how authorities stored inside spring security)
 73. [Authorities Table](#73 creating new table authorities to store multiple roles or authorities)
 74. [Loading Authorities from DB](#74 making backend changes to load authorities from new db table)
@@ -124,6 +130,15 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 82. [addFilterAfter()](#82 adding a custom filter using addfilterafter method)
 83. [addFilterAt()](#83 adding a custom filter using addfilterat method)
 
+### Add Filter Before
+<img width="1362" height="276" alt="image" src="https://github.com/user-attachments/assets/79bac3b2-12da-4c71-826e-05f958d9f917" />
+
+### Add Filter After
+<img width="1353" height="265" alt="image" src="https://github.com/user-attachments/assets/133f2715-d198-4290-a9aa-1e74df6aa337" />
+
+### Add Filter At
+<img width="1121" height="383" alt="image" src="https://github.com/user-attachments/assets/52b7dc9e-d69c-4a23-85c2-07d65addcbda" />
+
 ### 16. JWT Authentication
 84. [Opaque vs JWT Tokens](#84 opaque tokens vs json web tokens jwt)
 85. [Token-Based Authentication](#85 advantages of token based authentication)
@@ -135,6 +150,12 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 91. [JWT Testing](#91 validating the jwt changes made by running the applications)
 92. [JWT Expiration](#92 validating the jwt token expiration scenario)
 93. [Custom AuthenticationManager](#93 publish an authenticationmanager for custom or manual authentication)
+
+### Roles Of Tokens
+<img width="1372" height="447" alt="image" src="https://github.com/user-attachments/assets/70903546-049c-47a0-a611-4715287b8911" />
+
+### JWT Tokens
+<img width="1392" height="783" alt="image" src="https://github.com/user-attachments/assets/1b0c00fe-44b3-4d7e-9301-6ac00c7aed9e" />
 
 ### 17. Method Level Security
 94. [Introduction](#94 introduction to method level security in spring security)
@@ -151,11 +172,27 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 103. [OAuth2 Sample Flow](#103 demo of oauth2 sample flow)
 104. [Authorization Code Flow](#104 deep dive on authorization code grant type flow in oauth2)
 105. [Authorization Code Demo](#105 demo of authorization code grant type flow in oauth2)
+
+### OAUTH2 Flow(Authorizatio Code)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c19b3774-761c-4594-84b3-5e9eeb9213b4" />
+
 106. [Implicit Flow](#106 deep dive  demo of implicit grant flow in oauth2)
 107. [PKCE Flow](#107 deep dive  demo of authorization code grant type with pkce)
+
+### OAUTH2 Flow(PKCE)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/57652446-0600-40ac-86dc-372edb791e33" />
+
 108. [Password Grant](#108 deep dive of password grant type flow in oauth2)
 109. [Client Credentials](#109 deep dive of client credentials grant type flow in oauth2)
+
+### OAUTH2 Flow(Client Credentials Grant Type)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bff2f015-50e0-4934-a11f-744989d93ca5" />
+
 110. [Refresh Token Flow](#110 deep dive of refresh token grant type flow in oauth2)
+
+### OAUTH2 Flow(Refresh Token Grant Type)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6ac98ca3-e7d2-4793-87d4-0d345fba81dd" />
+
 111. [Token Validation](#111 how resource server validates the tokens issued by auth server)
 112. [OpenID Connect](#112 introduction to openid connect)
 
