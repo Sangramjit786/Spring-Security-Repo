@@ -221,6 +221,8 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 ## Project Structure
 
 - The project follows a standard Spring Boot project structure:
+
+   ```
    src/main/java/com/eazybytes/
    ├── config/           # Security and application configurations\n
    ├── constants/        # Application constants
