@@ -201,17 +201,17 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
    cd Spring-Security-Repo
 
 🔧 Configuration
-Database Configuration
-Update src/main/resources/application.properties:
+## Database Configuration
+- Update src/main/resources/application.properties:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 
-Keycloak Configuration**
+## Keycloak Configuration**
 
-To enable OAuth2 with Keycloak, update the following properties:
+-To enable OAuth2 with Keycloak, update the following properties:
 
 spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8180/realms/your-realm
 spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8180/realms/your-realm/protocol/openid-connect/certs
@@ -241,50 +241,50 @@ mvn test
 ## 🔐 Security Implementation**
 
 ## JWT Authentication:
-  JWT token generation and validation
-  Custom JWT filter
-  Token expiration and refresh mechanism
+  1. JWT token generation and validation
+  2. Custom JWT filter
+  3. Token expiration and refresh mechanism
   
 ## OAuth2 with Keycloak:
-  OAuth2 Resource Server configuration
-  Role-based access control
-  Custom token mappers
+  1. OAuth2 Resource Server configuration
+  2. Role-based access control
+  3. Custom token mappers
   
 ## Method Security:
-  @PreAuthorize and @PostAuthorize annotations
-  Custom security expressions
-  Method-level permission checks
+  1. @PreAuthorize and @PostAuthorize annotations
+  2. Custom security expressions
+  3. Method-level permission checks
   
 
 ## 🌐 API Endpoints**
 
 ## Secured Endpoints:
-GET /myAccount - Get account details (requires USER role)
-GET /myBalance - Get balance (requires USER role)
-GET /myLoans - Get loan details (requires USER role)
-GET /myCards - Get card details (requires ADMIN role)
+1. GET /myAccount - Get account details (requires USER role)
+2. GET /myBalance - Get balance (requires USER role)
+3. GET /myLoans - Get loan details (requires USER role)
+4. GET /myCards - Get card details (requires ADMIN role)
 
 
 ## 🛡️Security Best Practices** 
 
 ## Password Security:
-  BCrypt password hashing
-  Password strength validation
-  Secure password storage
+  1. BCrypt password hashing
+  2. Password strength validation
+  3. Secure password storage
   
 ## Session Management:
-  Secure session configuration
-  Session fixation protection
-  Concurrent session control
+  1. Secure session configuration
+  2. Session fixation protection
+  3. Concurrent session control
   
 ## HTTPS:
-  Enforce HTTPS
-  Secure cookie configuration
-  HSTS header
+  1. Enforce HTTPS
+  2. Secure cookie configuration
+  3. HSTS header
   
   
 ## 🙏 Acknowledgments:
-  Spring Security Team
-  Keycloak Community
-  All open-source contributors
+  1. Spring Security Team
+  2. Keycloak Community
+  3. All open-source contributors
 
