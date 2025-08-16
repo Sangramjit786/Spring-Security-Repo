@@ -210,7 +210,9 @@ spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 
 Keycloak Configuration**
+
 To enable OAuth2 with Keycloak, update the following properties:
+
 spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8180/realms/your-realm
 spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8180/realms/your-realm/protocol/openid-connect/certs
 
@@ -227,28 +229,28 @@ src/main/java/com/eazybytes/
 ├── model/            # Entity classes
 └── repository/       # Data access layer
 
-##Build the project:
+## Build the project:
 mvn clean install
 
-##Run the application:
+## Run the application:
 mvn spring-boot:run
 
-##Run tests using:
+## Run tests using:
 mvn test
 
 🔐 Security Implementation**
 
-JWT Authentication:
+## JWT Authentication:
   JWT token generation and validation
   Custom JWT filter
   Token expiration and refresh mechanism
   
-OAuth2 with Keycloak:
+## OAuth2 with Keycloak:
   OAuth2 Resource Server configuration
   Role-based access control
   Custom token mappers
   
-Method Security:
+## Method Security:
   @PreAuthorize and @PostAuthorize annotations
   Custom security expressions
   Method-level permission checks
@@ -256,32 +258,32 @@ Method Security:
 
 🌐 API Endpoints**
 
-Secured Endpoints:
+## Secured Endpoints:
 GET /myAccount - Get account details (requires USER role)
 GET /myBalance - Get balance (requires USER role)
 GET /myLoans - Get loan details (requires USER role)
 GET /myCards - Get card details (requires ADMIN role)
 
 
-🛡️ Security Best Practices: 
+🛡️ Security Best Practices** 
 
-Password Security**
+## Password Security:
   BCrypt password hashing
   Password strength validation
   Secure password storage
   
-Session Management**
+## Session Management:
   Secure session configuration
   Session fixation protection
   Concurrent session control
   
-HTTPS**
+## HTTPS:
   Enforce HTTPS
   Secure cookie configuration
   HSTS header
   
   
-🙏 Acknowledgments**
+🙏 Acknowledgments:
   Spring Security Team
   Keycloak Community
   All open-source contributors
