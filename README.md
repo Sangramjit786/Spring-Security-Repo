@@ -204,6 +204,7 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 ## Database Configuration
 - Update src/main/resources/application.properties:
 
+```
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
@@ -213,6 +214,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 - To enable OAuth2 with Keycloak, update the following properties:
 
+```
 spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8180/realms/your-realm
 spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8180/realms/your-realm/protocol/openid-connect/certs
 
