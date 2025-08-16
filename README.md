@@ -18,6 +18,10 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 ### Spring Security Internal Flow
 <img width="1396" height="782" alt="image" src="https://github.com/user-attachments/assets/137b84b9-762f-473c-a6b8-3e9d51c60f46" />
 
+### Spring Security Internal Flow For Default Behaviour
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36649af7-d85a-4eee-ae44-17ce30b94b66" />
+
+
 ### 3. Authentication & Authorization
 8. [Multiple Requests Without Credentials](#8 understanding on how multiple requests work with out credentials)
 9. [EazyBank UI Overview](#9 understanding about ui part of the eazybank application)
