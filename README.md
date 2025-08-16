@@ -200,36 +200,36 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
    git clone [https://github.com/Sangramjit786/Spring-Security-Repo.git](https://github.com/Sangramjit786/Spring-Security-Repo.git)
    cd Spring-Security-Repo
 
-🔧 Configuration
+## 🔧 Configuration
 ## Database Configuration
 - Update src/main/resources/application.properties:
 
-```
-spring.datasource.url=jdbc:mysql://localhost:3306/your_database
-spring.datasource.username=your_username
-spring.datasource.password=your_password
-spring.jpa.hibernate.ddl-auto=update
+  ```
+  spring.datasource.url=jdbc:mysql://localhost:3306/your_database
+  spring.datasource.username=your_username
+  spring.datasource.password=your_password
+  spring.jpa.hibernate.ddl-auto=update
 
-## Keycloak Configuration**
+## Keycloak Configuration:
 
 - To enable OAuth2 with Keycloak, update the following properties:
 
-```
-spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8180/realms/your-realm
-spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8180/realms/your-realm/protocol/openid-connect/certs
+  ```
+  spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8180/realms/your-realm
+  spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8180/realms/your-realm/protocol/openid-connect/certs
 
 ## Project Structure
 
-The project follows a standard Spring Boot project structure:
-src/main/java/com/eazybytes/
-├── config/           # Security and application configurations\n
-├── constants/        # Application constants
-├── controller/       # REST controllers
-├── events/           # Application events
-├── exceptionhandling/ # Exception handlers
-├── filter/           # Custom security filters
-├── model/            # Entity classes
-└── repository/       # Data access layer
+- The project follows a standard Spring Boot project structure:
+   src/main/java/com/eazybytes/
+   ├── config/           # Security and application configurations\n
+   ├── constants/        # Application constants
+   ├── controller/       # REST controllers
+   ├── events/           # Application events
+   ├── exceptionhandling/ # Exception handlers
+   ├── filter/           # Custom security filters
+   ├── model/            # Entity classes
+   └── repository/       # Data access layer
 
 ## Build the project:
 mvn clean install
