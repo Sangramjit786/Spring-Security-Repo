@@ -16,7 +16,8 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 7. [Sequence Flow of Default Behavior](#7 sequence flow of the spring security default behaviour)
 
 ### Spring Security Internal Flow
-<img width="1396" height="782" alt="image" src="https://github.com/user-attachments/assets/137b84b9-762f-473c-a6b8-3e9d51c60f46" />
+<img width="1031" height="513" alt="image" src="https://github.com/user-attachments/assets/f0cb7c2a-28a2-4a5d-b5a0-633482edf5d8" />
+
 
 ### Spring Security Internal Flow For Default Behaviour
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/36649af7-d85a-4eee-ae44-17ce30b94b66" />
