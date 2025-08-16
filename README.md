@@ -274,7 +274,7 @@ Session Management
   Concurrent session control
   
 HTTPS
-  Enforce HTTPS
+  =>Enforce HTTPS
   Secure cookie configuration
   HSTS header
   
