@@ -238,7 +238,7 @@ mvn spring-boot:run
 ## Run tests using:
 mvn test
 
-🔐 Security Implementation**
+## 🔐 Security Implementation**
 
 ## JWT Authentication:
   JWT token generation and validation
@@ -256,7 +256,7 @@ mvn test
   Method-level permission checks
   
 
-🌐 API Endpoints**
+## 🌐 API Endpoints**
 
 ## Secured Endpoints:
 GET /myAccount - Get account details (requires USER role)
@@ -265,7 +265,7 @@ GET /myLoans - Get loan details (requires USER role)
 GET /myCards - Get card details (requires ADMIN role)
 
 
-🛡️ Security Best Practices** 
+## 🛡️Security Best Practices** 
 
 ## Password Security:
   BCrypt password hashing
@@ -283,7 +283,7 @@ GET /myCards - Get card details (requires ADMIN role)
   HSTS header
   
   
-🙏 Acknowledgments:
+## 🙏 Acknowledgments:
   Spring Security Team
   Keycloak Community
   All open-source contributors
