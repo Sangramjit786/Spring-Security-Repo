@@ -211,7 +211,7 @@ spring.jpa.hibernate.ddl-auto=update
 
 ## Keycloak Configuration**
 
--To enable OAuth2 with Keycloak, update the following properties:
+- To enable OAuth2 with Keycloak, update the following properties:
 
 spring.security.oauth2.resourceserver.jwt.issuer-uri=http://localhost:8180/realms/your-realm
 spring.security.oauth2.resourceserver.jwt.jwk-set-uri=http://localhost:8180/realms/your-realm/protocol/openid-connect/certs
