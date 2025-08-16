@@ -15,6 +15,9 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 6. [Demo: Spring Security Internal Flow](#6 demo of spring security internal flow)
 7. [Sequence Flow of Default Behavior](#7 sequence flow of the spring security default behaviour)
 
+### Spring Security Internal Flow
+<img width="1396" height="782" alt="image" src="https://github.com/user-attachments/assets/137b84b9-762f-473c-a6b8-3e9d51c60f46" />
+
 ### 3. Authentication & Authorization
 8. [Multiple Requests Without Credentials](#8 understanding on how multiple requests work with out credentials)
 9. [EazyBank UI Overview](#9 understanding about ui part of the eazybank application)
@@ -28,10 +31,6 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 15. [In Memory Authentication](#15 configuring users using inmemoryuserdetailsmanager)
 16. [Password Encoding](#16 configuring passwordencoder using passwordencoderfactories)
 17. [Password Security](#17 demo of compromisedpasswordchecker)
-
-### Spring Security Internal Flow
-<img width="1396" height="782" alt="image" src="https://github.com/user-attachments/assets/137b84b9-762f-473c-a6b8-3e9d51c60f46" />
-
 
 ### 5. User Management
 18. [UserDetailsService & UserDetailsManager](#18 deep dive of userdetailsservice  userdetailsmanager interfaces)
