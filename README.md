@@ -29,6 +29,10 @@ A comprehensive guide and implementation of Spring Security concepts, from basic
 16. [Password Encoding](#16 configuring passwordencoder using passwordencoderfactories)
 17. [Password Security](#17 demo of compromisedpasswordchecker)
 
+### Spring Security Internal Flow
+<img width="1396" height="782" alt="image" src="https://github.com/user-attachments/assets/137b84b9-762f-473c-a6b8-3e9d51c60f46" />
+
+
 ### 5. User Management
 18. [UserDetailsService & UserDetailsManager](#18 deep dive of userdetailsservice  userdetailsmanager interfaces)
 19. [UserDetails & Authentication](#19 deep dive of userdetails  authentication interfaces)
